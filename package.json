@@ -1,0 +1,35 @@
+{
+  "name": "framerate",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "db:reset": "sqlite3 db/db.sqlite < db/migrations/1-reset.sql",
+    "db:seed": "sqlite3 db/db.sqlite < db/migrations/2-seed.sql",
+    "dev": "nodemon server/run.js",
+    "test": "mocha",
+    "test:d1e1": "mocha ./test/exercises/d1e1.test.js",
+    "test:d1e2": "mocha ./test/exercises/d1e2.test.js",
+    "test:d1e3": "mocha ./test/exercises/d1e3.test.js",
+    "test:d2e1": "mocha ./test/exercises/d2e1.test.js",
+    "test:d2e2": "mocha ./test/exercises/d2e2.test.js",
+    "test:d2e3": "mocha ./test/exercises/d2e3.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "knex": "^3.1.0",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "mocha": "^10.4.0",
+    "nodemon": "^3.1.0",
+    "supertest": "^7.0.0"
+  }
+}
