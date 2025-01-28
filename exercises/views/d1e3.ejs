@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Day 1 | Exercise 3</title>
+  <title>d1e3</title>
 </head>
 
 <body>
-  <h1>Shopping list</h1>
-
+  <h1>Shopping List</h1>
   <ul>
-    <!-- TODO: loop through `shopping` and render each item inside a <li> element -->
+    <% shopping.forEach(item => { %>
+      <li><%= item %></li>
+    <% }) %>
   </ul>
 </body>
 
 </html>
+
+

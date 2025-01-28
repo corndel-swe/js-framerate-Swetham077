@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= movie.title %> - Details</title>
+</head>
+<body>
+    <h1><%= movie.title %></h1>
+    <p><%= movie.description %></p>
+    <h2>Reviews</h2>
+    <ul>
+        <% movie.reviews.forEach(review => { %>
+            <li><%= review.content %> - <%= review.author %></li>
+        <% }) %>
+    </ul>
+    <a href="/">Back to Movies</a>
+</body>
+</html>
